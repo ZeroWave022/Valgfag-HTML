@@ -1,0 +1,111 @@
+/* General CSS Section */
+body {
+  margin: 0;
+  font-family: calibri, sans-serif, helvetica;
+  background-color: lightsteelblue;
+}
+
+p {
+  margin: 5px;
+}
+
+.middle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+/* Valutakurser CSS Section */
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+.listitem {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 75%;
+}
+
+/* Navigation Bar CSS Section */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.colorButton {
+  background-color: rgb(255,0,0);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  margin: 10px;
+}
+
+/* Guess The Color RGB Game CSS Section */
+#buttonWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#colorValue {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#answer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#reset {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#reset-button {
+  padding: 10px;
+  background: none;
+  border: 1px solid #000;
+  margin: 10px;
+}

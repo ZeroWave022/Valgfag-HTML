@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Fredagmail Bildeviser</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="../index.html">Hjem</a>
+            <a href="../top5.html">Top 5 Programming Languages</a>
+            <a href="../dogs.html">Dogs</a>
+            <a href="../CatMemes/index.html">Lag dine egne Cat Memes!</a>
+            <a href="../GuessTheColor/index.html">Gjett RGB fargen!</a>
+            <a class="active" href="../Fredagmails/index.html">Se bilder fra Fredagmails!</a>
+        </div>
+        <div id="header">
+            <h1>Fredagsmail: Bildeviser</h1>
+        </div>
+        <div id="menu">
+            <h3>Velg et bilde:</h3>
+            <img src="./bilde1.png" id="bilde1" alt="Bilde nr 1." onclick="showPhoto(1)">
+            <img src="./bilde2.png" id="bilde2" alt="Bilde nr 2." onclick="showPhoto(2)">
+            <img src="./bilde3.png" id="bilde3" alt="Bilde nr 3." onclick="showPhoto(3)">
+            <img src="./bilde4.png" id="bilde4" alt="Bilde nr 4." onclick="showPhoto(4)">
+            <img src="./bilde5.png" id="bilde5" alt="Bilde nr 5." onclick="showPhoto(5)">
+            <img src="./bilde6.png" id="bilde6" alt="Bilde nr 6." onclick="showPhoto(6)">
+            <img src="./bilde7.png" id="bilde7" alt="Bilde nr 7." onclick="showPhoto(7)">
+        </div>
+        <div id="viewer">
+            <h3>Valgt bilde:</h3>
+            <img src="bilde1.png" alt="Stort bilde" id="bigPicture">
+        </div>
+        <div id="title">
+            <p>Bilde nr 1.</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
