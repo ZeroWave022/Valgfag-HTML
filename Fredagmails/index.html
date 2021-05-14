@@ -7,6 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <!-- Navigation Bar -->
         <div class="navbar">
             <a href="../home.html">Hjem</a>
             <a href="../top5.html">Top 5 Programming Languages</a>
@@ -15,9 +16,11 @@
             <a href="../GuessTheColor/index.html">Gjett RGB fargen!</a>
             <a class="active" href="../Fredagmails/index.html">Se bilder fra Fredagmails!</a>
         </div>
+        <!-- Header -->
         <div id="header">
             <h1>Fredagsmail: Bildeviser</h1>
         </div>
+        <!-- The main menu (left side) -->
         <div id="menu">
             <h3>Velg et bilde:</h3>
             <img src="./bilde1.png" id="bilde1" alt="Bilde nr 1." onclick="showPhoto(1)">
@@ -28,13 +31,16 @@
             <img src="./bilde6.png" id="bilde6" alt="Bilde nr 6." onclick="showPhoto(6)">
             <img src="./bilde7.png" id="bilde7" alt="Bilde nr 7." onclick="showPhoto(7)">
         </div>
+        <!-- Viewer (right side) -->
         <div id="viewer">
             <h3>Valgt bilde:</h3>
             <img src="bilde1.png" alt="Stort bilde" id="bigPicture">
         </div>
+        <!-- Picture title -->
         <div id="title">
             <p>Bilde nr 1.</p>
         </div>
+        <!-- Import JS -->
         <script src="script.js"></script>
     </body>
 </html>
