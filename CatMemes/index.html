@@ -4,9 +4,6 @@
     <title>Cat Memes</title>
     <link href="../css/mainstyle.css" rel="stylesheet">
     <style type="text/css">
-        body {
-            font-family: calibri, sans-serif;
-        }
         #meme_text {
             background-color: transparent;
             font-size: 40px;
@@ -22,7 +19,7 @@
   </head>
   <body>
     <div class="navbar">
-        <a href="../index.html">Hjem</a>
+        <a href="../home.html">Hjem</a>
         <a href="../top5.html">Top 5 Programming Languages</a>
         <a href="../dogs.html">Dogs</a>
         <a class="active" href="../CatMemes/index.html">Lag dine egne Cat Memes!</a>
@@ -37,19 +34,6 @@
     <div id="meme_picture">
         <img src="" height="500" width="600">
     </div>
-    <script>
-        function updateText() {
-            var userText = document.getElementById("user_text");
-            var memeText = document.getElementById("meme_text");
-            memeText.innerHTML = userText.value;
-        }
-
-        function updateImage() {
-            var img = document.querySelector('img');
-            var file = document.querySelector('input[type=file]').files[0];
-
-            img.src = window.URL.createObjectURL(file);
-        }
-    </script>
+    <script src="../js/catmemes.js"></script>
   </body>
 </html>

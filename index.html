@@ -1,60 +1,109 @@
 <!DOCTYPE html> 
 <html>
   <head>
-    <link href="./css/mainstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        html {
+            height: 100%;
+            background: linear-gradient(180deg, #0000ff, #00ccff);
+            background-size: 400% 400%;
+
+            -webkit-animation: backgroundAnim 5s ease;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation: backgroundAnim 5s ease;
+            -moz-animation-fill-mode: forwards;
+            animation: backgroundAnim 5s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes backgroundAnim {
+            0% { background-position:51% 0% }
+            100% { background-position:50% 100% }
+        }
+        @-moz-keyframes backgroundAnim {
+            0% { background-position:51% 0% }
+            100% { background-position:50% 100% }
+        }
+        @keyframes backgroundAnim {
+            0% { background-position:51% 0% }
+            100% { background-position:50% 100% }
+        }
+
+        @font-face {
+            font-family: 'titleFont';
+            src: url('./fonts/TitleFont.otf');
+        }
+
+        h1 {
+            font-family: 'titleFont', calibri, sans-serif, helvetica;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .title {
+            text-align: center;
+            font-size: 8em;
+        }
+
+        .info {
+            font-family: calibri, sans-serif, helvetica;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        button {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .continuebtn {
+            font-family: calibri, sans-serif, helvetica;
+            background: #0f0f6d;
+            color: #fff;
+            cursor: pointer;
+            font-size: 2em;
+            padding: 1.5rem;
+            border: 0;
+            transition: all 0.5s;
+            border-radius: 10px;
+            width: auto;
+            position: relative;
+        }
+        .continuebtn::after {
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 85%;
+            top: 31%;
+            right: 5%;
+            bottom: 0;
+            opacity: 0;
+        }
+        .continuebtn:hover {
+            background: #2b2bff;
+            transition: all 0.5s;
+            border-radius: 10px;
+            box-shadow: 0px 6px 15px #00f 61;
+            padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+        }
+        .continuebtn:hover::after {
+            opacity: 1;
+            transition: all 0.5s;
+        }
+    </style>
   </head>
   <body>
-    <div class="navbar">
-      <a class="active" href="index.html">Hjem</a>
-      <a href="top5.html">Top 5 Programming Languages</a>
-      <a href="dogs.html">Dogs</a>
-      <a href="CatMemes/index.html">Lag dine egne Cat Memes!</a>
-      <a href="GuessTheColor/index.html">Gjett RGB fargen!</a>
-      <a href="Fredagmails/index.html">Se bilder fra Fredagmails!</a>
-    </div>
-
-    <div class="container">
-      <h1 class="title">NRG-U</h1>
-      <p class="middle">NRG-U er en skole i Bærum med realfagstilbud og godt miljø.<br>
-      Skolens adresse er: Skytterdalen 6, 1337 Sandvika.<br>
-      For enda mer informasjon om skolen, kan du sjekke <a href="https://nrg.no">deres nettside</a>.</p>
-  
-      <h1>Været</h1>
-      <div class="middle">
-        <p>Lurte du noen gang på været i Sandvika når du gikk til skolen?<br>Eller er du en lærer som trenger å vite om du kan forvente kø?</p>
-        <p>Sjekk været her da!</p>
-        <p id="weatherdescription" style="font-size: 22px;">Temperatur i Sandvika: </p>
-        <img id="weathericon" style="width: 100px; height: 100px;">
-        <p>Informasjonen oppdateres hver gang du kommer inn på nettsiden.</p>
-      </div>
-      
-      <h1 class="title">Valutakurser</h1>
-      <p class="info">Denne nettsiden inneholder valutakurser. Sist oppdatert: 02/03/2021.</p>
-      <table class="middle">
-        <tr>
-          <th>Valuta</th>
-          <th>Kurs</th>
-          <th>100NOK tilsvarer:</th>
-        </tr>
-        <tr>
-          <td>USD</td>
-          <td>0,12</td>
-          <td>11,7</td>
-        </tr>
-        <tr>
-          <td>PLN</td>
-          <td>0,44</td>
-          <td>44</td>
-        </tr>
-      </table>
-    </div>
-
-    <div style="float: right; display: inline;">
-      <img src="nrglogo.png" alt="NRG logo" style="width: 150px; height: 150px;">
-      <p style="text-align: center;">Bilde: NRG logo.</p>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/weather.js"></script>
+    <!-- Main Content -->
+    <section>
+        <h1 class="title">Valgfaght.ml</h1>
+        <p class="info">Denne nettsiden er laget som er prosjekt for Valgfag Programminering, av Martin K i 10G.</p>
+        <a href="./home.html"><button class="continuebtn">Gå videre</button></a>
+    </section>
  </body>
 </html>

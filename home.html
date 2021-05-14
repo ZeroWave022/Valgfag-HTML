@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <link href="./css/mainstyle.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a class="active" href="index.html">Hjem</a>
+      <a href="top5.html">Top 5 Programming Languages</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="CatMemes/index.html">Lag dine egne Cat Memes!</a>
+      <a href="GuessTheColor/index.html">Gjett RGB fargen!</a>
+      <a href="Fredagmails/index.html">Se bilder fra Fredagmails!</a>
+    </div>
+
+    <!-- Main Content -->
+    <h1 class="title">NRG-U</h1>
+    <p class="middle">NRG-U er en skole i Bærum med realfagstilbud og godt miljø.<br>
+    Skolens adresse er: Skytterdalen 6, 1337 Sandvika.<br>
+    For enda mer informasjon om skolen, kan du sjekke <a href="https://nrg.no">deres nettside</a>.</p>
+  
+    <h1 class="title">Været</h1>
+    <div class="middle">
+      <p>Lurte du noen gang på været i Sandvika når du gikk til skolen?<br>Eller er du en lærer som trenger å vite om du kan forvente kø?</p>
+      <p>Sjekk været her da!</p>
+      <p id="weatherdescription" style="font-size: 22px;">Temperatur i Sandvika: </p>
+      <img id="weathericon" style="width: 100px; height: 100px;">
+      <p>Informasjonen oppdateres hver gang du kommer inn på nettsiden.</p>
+    </div>
+      
+    <h1 class="title">Valutakurser</h1>
+    <p class="info">Denne nettsiden inneholder valutakurser. Sist oppdatert: 02/03/2021.</p>
+    <table class="middle">
+      <tr>
+        <th>Valuta</th>
+        <th>Kurs</th>
+        <th>100NOK tilsvarer:</th>
+      </tr>
+      <tr>
+        <td>USD</td>
+        <td>0,12</td>
+        <td>11,7</td>
+      </tr>
+      <tr>
+        <td>PLN</td>
+        <td>0,44</td>
+        <td>44</td>
+      </tr>
+    </table>
+
+    <!-- NRG Logo -->
+    <div style="float: right; display: inline;">
+      <img src="nrglogo.png" alt="NRG logo" style="width: 150px; height: 150px;">
+      <p style="text-align: center;">Bilde: NRG logo.</p>
+    </div>
+    
+    <!-- Import JS scripts and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/weather.js"></script>
+ </body>
+</html>
