@@ -1,0 +1,20 @@
+body {
+  background: #FFA500;
+}
+p {
+  color: black;
+}
+h2 /*Overskriften*/{
+  font-weight: bold;
+  border: 15px solid transparent;/*Lager en kant*/
+  border-image: url(Note-kant.png) 30 round;/*Putter bilde som kanten på noe. Pixabay: https://pixabay.com/de/illustrations/musik-hinweis-rahmen-musik-grenze-4620109/  */
+}
+
+/* Bilde*/
+img{
+  background-image: url("Diamond-dogs.jpg");
+  width: 130px;
+  float: right;
+  border-style: groove;
+}
+

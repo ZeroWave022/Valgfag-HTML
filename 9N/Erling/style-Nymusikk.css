@@ -1,0 +1,38 @@
+body {
+  background: #FFA500; /*Orange fin farge*/
+}
+p {
+  color: black;
+  margin-bottom: 10px;
+}
+h2 /*Overskrift*/{
+  font-weight: bold;
+  border: 15px solid transparent;/*Lager en kant*/
+  border-image: url(Note-kant.png) 30 round;/*Putter bilde som kanten på noe. Pixabay: https://pixabay.com/de/illustrations/musik-hinweis-rahmen-musik-grenze-4620109/  */
+}
+
+h5{
+  font-size: 15px;
+}
+
+h3/*h3 og h4 er under overskriftene men for å kunne gi riktig mellomrom gjorde det til to*/{
+  font-size: 20px;
+}
+
+h4{
+  font-size: 20px;
+  margin-top: 100px;
+
+  
+}
+
+li{
+  padding-top: 80px;/*For å få kilden på linje med bunn av bilde*/
+}
+
+img{
+  margin:10px;
+  width: 200px;
+  float:left;
+  
+}

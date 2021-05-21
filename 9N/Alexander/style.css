@@ -1,0 +1,19 @@
+body {
+  background: #e0e2ff;
+}
+p {
+  color: black;
+}
+h1 {
+  color: palevioletred;
+  font-weight: bold;
+}
+h6{font-family:monospace}
+
+.bonk{
+  color: darkblue
+}
+
+img {
+  width: 500px;
+}

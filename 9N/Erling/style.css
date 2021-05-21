@@ -1,0 +1,22 @@
+body {
+  background: #FFA500;
+}
+p /*Alle tekst*/{
+  color: black;
+  padding-right:200px;
+  width:px;
+  
+}
+h1/*Overskrift*/ {
+  font-weight: bold;
+  border: 15px solid transparent;/*Lager en kant*/
+  border-image: url(Note-kant.png) 30 round;/*Putter bilde som kanten på noe. Pixabay: https://pixabay.com/de/illustrations/musik-hinweis-rahmen-musik-grenze-4620109/  */
+}
+/*Margin lager plass mot kanten */
+img {/*Bilde*/
+  float: right;
+  width: 110px; 
+  margin-right: 30px;
+  border: 10px;/*Lager inn ramning av bilde*/
+  border-style:ridge;
+}

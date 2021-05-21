@@ -1,0 +1,35 @@
+body{
+    background-color: #000000; /* Gir nettsiden en bakgrunnsfarge */
+}
+
+h1{
+    text-align: center; /* Setter teksten midt på skjermen */
+    font-family: monospace; /* Bytter på fonten til teksten */
+    text-decoration: underline; /* Legger til en underlinje på teksten */
+    color: #FF0000; /* Gir teksten en annen farge */
+}
+
+h3{
+    text-align: center; /* Setter teksten midt på skjermen */
+    font-family: monospace; /* Bytter på fonten til teksten */
+    color: #FF0000; /* Gir teksten en annen farge */
+}
+
+.btn{
+    width: 300px; /* Gir btn klassen en bredde på 300 pixel */
+    height: 150px; /* Gir btn klassen en høyde på 150 pixel */
+    background-color: #FF0000; /* Gir btn klassen en annen bakgrunnsfarge */
+    border-radius: 20px; /* Gir btn klassen avrundete hjørner med 20 pixel */ 
+    border: 2px solid; /* Gir btn klassen 2 pixel tykk kant */
+    font-family: monospace; /* Bytter fonten på btn klassen */
+}
+
+.center{
+    text-align: center; /* Sentrerer center klassen */
+}
+
+.dotted{
+    border: 5px dotted; /* Gir dotted klassen en border på 5px */
+    border-style: none none dotted; /* Gir dotted klassen en annen border style */
+    color: #FF0000 /* Gir dotted klassen en ny farge */
+}

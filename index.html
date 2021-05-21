@@ -30,9 +30,36 @@
             100% { background-position:50% 100% }
         }
 
+        @keyframes wrapperAnim {
+            0% { transform: translateY(50%); }
+            100% { transform: translateY(0%); }
+        }
+
+        @-webkit-keyframes backgroundAnim {
+            0% { transform: translateY(50%); }
+            100% { transform: translateY(0%); }
+        }
+
+        @-moz-keyframes backgroundAnim {
+            0% { transform: translateY(50%); }
+            100% { transform: translateY(0%); }
+        }
+
         @font-face {
             font-family: 'titleFont';
             src: url('./fonts/TitleFont.otf');
+        }
+
+        .wrapper {
+            text-align: center;
+            animation: wrapperAnim 2s ease;
+            -moz-animation: wrapperAnim 2s ease;
+            -webkit-animation: wrapperAnim 2s ease;
+        }
+
+        .wrapper button {
+            width: 8em;
+            height: 2.5em;
         }
 
         h1 {
@@ -58,11 +85,8 @@
             font-size: 1.5em;
         }
 
-        button {
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-        }
-
         .continuebtn {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             font-family: calibri, sans-serif, helvetica;
             background: #0f0f6d;
             color: #fff;
@@ -103,8 +127,28 @@
     <!-- Main Content -->
     <section>
         <h1 class="title">Valgfaght.ml</h1>
-        <p class="info">Denne nettsiden er laget som et prosjekt for Valgfag Programminering, av Martin K i 10G.</p>
-        <a href="./home.html"><button class="continuebtn">Gå videre</button></a>
+        <p class="info">Her finner du alt NRG-U har laget i Valgfag Programmering, fra YouTube videoer til spill.</p>
+        <button class="continuebtn" onclick="continueBtn()">Gå videre</button>
     </section>
+    <script>
+        function continueBtn() {
+            document.getElementsByClassName('continuebtn')[0].remove();
+            var wrapperDiv = document.createElement('div');
+            wrapperDiv.innerHTML = `<h1 style="text-align: center;">10. Trinn:</h1>
+            <p><a href="./10G/Daniel/index.html"><button>Daniel - 10G</button></a></p>
+            <p></p><a href="./home.html"><button>Martin - 10G</button></a></p>
+
+            <h1 style="text-align: center;">9. Trinn:</h1>
+            <p><a href="./9N/Adi/index.html"><button>Adi - 9N</button></a></p>
+            <p></p><a href="./9N/Alexander/index.html"><button>Alexander - 9N</button></a></p>
+            <p></p><a href="./9N/Benjamin/index.html"><button>Benjamin - 9N</button></a></p>
+            <p></p><a href="./9N/Erling/index.html"><button>Erling - 9N</button></a></p>
+            <p></p><a href="./9N/Leo/index.html"><button>Leo - 9N</button></a></p>
+            <p></p><a href="https://martie.ga/"><button>Martin - 9N</button></a></p>
+            </div>`;
+            wrapperDiv.className = 'wrapper';
+            document.body.append(wrapperDiv);
+        }
+    </script>
  </body>
 </html>

@@ -1,0 +1,21 @@
+body {
+  background: white;
+  text-align: center
+}
+p {
+  color: black;
+  font-family: cursive
+}
+h1 {
+  font-weight: bold;
+  font-family: fantasy;
+  margin: 12px;
+  font-size: 50;
+  color: darkred
+}
+
+#tsjorte {
+  width: 500px;
+  
+}
+
